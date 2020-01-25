@@ -1,8 +1,6 @@
 name: Java CI
 
 on: push
-branches-ignore: 
-actions
 
 jobs:
   build:
