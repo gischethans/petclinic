@@ -28,5 +28,3 @@ jobs:
       uses: Azure/webapps-deploy@v1
       with:
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-        app-name: thepetclinic
-        package: 'target/petclinic.war'
