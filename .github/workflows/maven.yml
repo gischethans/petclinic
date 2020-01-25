@@ -1,4 +1,4 @@
-name: Java CI
+name: Pet Clinic CI
 
 on: push
 
@@ -30,4 +30,3 @@ jobs:
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
         app-name: thepetclinic
         package: 'target/petclinic.war'
-        slot-name: production
