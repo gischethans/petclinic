@@ -23,3 +23,4 @@ jobs:
       with:
         app-name: thepetclinic
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+        slot-name: thepetclinic-staging 
