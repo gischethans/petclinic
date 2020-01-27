@@ -66,3 +66,13 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
+            enabled: false
+
+          - task: AzureRmWebAppDeployment@4
+            inputs:
+              ConnectionType: 'AzureRM'
+              azureSubscription: 'MSDN (a140267e-2a90-4d2d-a85e-15fdc2521f60)'
+              appType: 'webAppLinux'
+              WebAppName: 'thepetclinic'
+              packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+              RuntimeStack: 'TOMCAT|8.5-jre8'
