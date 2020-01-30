@@ -25,5 +25,5 @@ jobs:
       uses: Azure/webapps-deploy@v1
       with:
         app-name: thepetclinic
-        publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+        publish-profile: ${{ secrets.stagingPublishProfile }}
         slot-name: thepetclinic-staging 
