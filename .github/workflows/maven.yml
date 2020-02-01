@@ -24,6 +24,7 @@ jobs:
     - name: Azure WebApp Deployment
       uses: Azure/webapps-deploy@v1
       with:
-        app-name: thepetclinic
         publish-profile: ${{ secrets.publishProfile }}
-        package: '${{ github.workspace }}/target/petclinic.war'
+        app-name: thepetclinic
+        package: '${{ github.workspace }}/target/*.war'
+        slot-name: thepetclinic
