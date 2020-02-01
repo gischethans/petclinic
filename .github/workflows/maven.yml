@@ -27,3 +27,4 @@ jobs:
         app-name: thepetclinic
         publish-profile: ${{ secrets.winProfile }}
         slot-name: thepetclinic
+        package: '${{ github.workspace }}/target/*.war'
