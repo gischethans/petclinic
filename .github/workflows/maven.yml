@@ -20,6 +20,12 @@ jobs:
       
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: SonarCloud scan
+      run: mvn verify sonar:sonar
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.sonarToken }}
         
     - name: Azure WebApp Deployment
       uses: Azure/webapps-deploy@v1
