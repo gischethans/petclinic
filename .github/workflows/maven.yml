@@ -1,4 +1,4 @@
-name: PetClinic - ${{ github.run_number }}
+name: Build & Deploy Pet Clinic
 
 on: push
 
@@ -41,6 +41,6 @@ jobs:
         creds: ${{ secrets.AZURE_CREDS }}
     
     - run: |
-        az storage blob upload -c petclinic -f '${{ github.workspace }}/target/petclinic.war' -n 'petclinic_${{ github.run_number }}.war' \
+        az storage blob upload -c petclinic -f '${{ github.workspace }}/target/petclinic.war' -n 'petclinic_${{ github.sha }}.war' \
         --account-name warfiles \
         --account-key ${{ secrets.azureStorage }}
