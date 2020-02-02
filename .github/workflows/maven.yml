@@ -1,4 +1,4 @@
-name: Pet Clinic CI
+name: Build & Deploy Pet Clinic
 
 on: push
 
