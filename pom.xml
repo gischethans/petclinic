@@ -84,7 +84,7 @@
         <sonar.projectKey>gischethans_petclinic</sonar.projectKey>
         <sonar.organization>staygeo</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>secrets.sonarToken</sonar.login>
+        <sonar.login>${secrets.sonarToken}</sonar.login>
 
     </properties>
 
