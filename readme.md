@@ -1,8 +1,8 @@
 # Spring PetClinic Sample Application
 
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=gischethans_petclinic)
 [![Build Status](https://github.com/gischethans/petclinic/workflows/Build%20&%20Deploy%20Pet%20Clinic/badge.svg?branch=master)](https://github.com/gischethans/petclinic/actions) 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-framework-petclinic&metric=alert_status)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-framework-petclinic)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-framework-petclinic&metric=coverage)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-framework-petclinic)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gischethans_petclinic&metric=alert_status)](https://sonarcloud.io/dashboard?id=gischethans_petclinic)
 
 Approved by the Spring team, this repo is a fork of the [spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic).
 It allows the Spring community to maintain a Petclinic version with a plain old **Spring Framework configuration**
