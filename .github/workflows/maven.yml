@@ -34,3 +34,13 @@ jobs:
         app-name: thepetclinic
         package: '${{ github.workspace }}/target/*.war'
         slot-name: thepetclinic-staging
+        
+    - name: Azure Login
+      uses: Azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDS }}
+    
+    - run: |
+        az storage blob upload -c petclinic -f '${{ github.workspace }}/target/petclinic.war' -n 'petclinic_${{ github.sha }}.war' \
+        --account-name warfiles \
+        --account-key ${{ secrets.azureStorage }}
