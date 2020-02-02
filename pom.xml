@@ -79,6 +79,12 @@
         <!-- Docker image -->
         <docker.jib-maven-plugin.version>1.7.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
+		
+		<!-- SonarCloud scan -->
+        <sonar.projectKey>gischethans_petclinic</sonar.projectKey>
+        <sonar.organization>staygeo</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>secrets.sonarToken</sonar.login>
 
     </properties>
 
